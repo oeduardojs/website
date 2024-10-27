@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <title>Eduardo Araujo | Backend Developer</title>
+
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <meta name="theme-color" content="#36d1dc" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://eduardojs.com" />
+    <meta property="og:title" content="Eduardo Araujo | Developer" />
+  
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+  </head>
+  <body>
+
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Olá, meu nome é <span class="text-color-main name">Eduardo Araujo</span>
+          <br />
+          E eu sou um Desenvolvedor Backend.
+        </h1>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">Sobre mim:</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/eduardojs.png"
+              alt="Profile Image"
+              width="400"
+              height="400"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Gosto de ficção científica, tanto no cinema quanto
+              na literatura. Além de ficção científica, também me interesso
+              por literatura gótica, russa, francesa, alemã e inglesa, sempre
+              em busca de boas histórias para passar enriquecer a alma.
+              Também sou interessado por Filosofia e, claro, não posso deixar
+              de mencionar meu interesse pelo conjunto de escritos mitopoiéticos
+              de J.R.R. Tolkien – quem não ama O Senhor dos Anéis? Além disso,
+              aprecio cafés e pimentas, que sempre dão um toque especial ao dia. 
+            </p>
+            <p class="about-wrapper__info-text">
+              Aos 48 anos, estou em transição de carreira para a área de
+              tecnologia, com um foco na programação do lado do servidor.
+              No decorrer do curso de Análise e Desenvolvimento de
+              Sistemas, tive a oportunidade de trabalhar com JavaScript e
+              Node.js, e me apaixonei por essas tecnologias. Meu objetivo
+              é continuar aprendendo e desenvolver soluções usando Node e
+              explorar novos frameworks que fazem parte desse ecossistema. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://x.com/_eduardojs_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+            title="Twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/__eduardojs__/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+            title="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/oeduardojs/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            title="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/oeduardojs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+            title="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> Eduardo Araujo
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
